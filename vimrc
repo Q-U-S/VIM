@@ -62,3 +62,13 @@ endif
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
+
+map <A-Left> :tabp<CR>
+map <A-Right> :tabn<CR>
+
+set tabstop=4
+set shiftwidth=4
+
+set expandtab
+
+
