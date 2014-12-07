@@ -63,6 +63,12 @@ endif
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
 
+autocmd BufNewFile,BufRead *.markdown,*.md,*.mdown,*.mkd,*.mkdn set ft=markdown
+
+syntax on
+
+set background=dark
+
 map <A-Left> :tabp<CR>
 map <A-Right> :tabn<CR>
 
@@ -70,5 +76,6 @@ set tabstop=4
 set shiftwidth=4
 
 set expandtab
+
 
 
